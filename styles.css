@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  /* p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .pai {
+    border: 1px solid black;
+    height: 300px;
+    margin: 5%;
+    width: 90%;
+  }
+  .filho {
+    background-color: lightgray;
+    height: 100vh;
+    width: 100vw;
+  }
+  .banner {
+    background-image: url(http://1.bp.blogspot.com/__P_7vWHCFuc/TIkSiCFxR3I/AAAAAAAAAJ8/gAYJ0iMR-hA/s1600/Ronaldo-Preserva%C3%A7%C3%A3o.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vw;
+    width: 100vw;
+  } */
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "header header header header"
+      "main main . sidebar"
+      "main main . ."
+      "footer footer footer footer";
+  }
+  
+  header {
+    align-items: center;
+    background-color: #404094;
+    display: flex;
+    grid-area: header;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  
+  header h3 {
+    color: lightgray;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
+  
+  header nav a {
+    color: lightgray;
+    text-decoration: none;
+  }
+  
+  main {
+    background-color: #944a40;
+    grid-area: main;
+  }
+  
+  .sidebar {
+    background-color: #949240;
+    grid-area: sidebar;
+  }
+  
+  footer {
+    background-color: #409455;
+    grid-area: footer;
+  }
