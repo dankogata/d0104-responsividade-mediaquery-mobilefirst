@@ -65,6 +65,10 @@ main{
     grid-area: main;
 }
 
+body button{
+    border-radius: 20px;
+    display: flex;
+}
 /* Media Query */
 /*breaking pointa para tablet*/
 @media(min-width:768px){
@@ -92,7 +96,7 @@ main{
         flex-direction: column;
         justify-content: center;
     }
-
+    
 }
 /*breaking point para notebooks grandes e desktop*/
 @media(min-width:1200px){
